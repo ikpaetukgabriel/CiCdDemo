@@ -21,7 +21,7 @@ public class HelloCircleControllerTest {
 
     @Test
     public void shouldReturnAnswer() throws Exception {
-        // arrange and act
+        // Arrange and act
         mockMvc.perform(get("/answer"))
                 .andDo(print())
                 .andExpect(status().isOk())
